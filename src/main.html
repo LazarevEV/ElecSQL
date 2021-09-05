@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ElecSQL</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+        <div class="app-wrapper">
+            <div class='title-bar'>
+                <div class="main-menu-bar">Main Menu Bar</div>
+                <div class="opened-file-name">file_name.sql - ElecSQL</div>
+                <div class="app-control_bar">
+                    <button id="minimizeButton" class="app-control-buttons minimizeButton"></button>
+                    <button id="maxresButton" class="app-control-buttons maximizeButton"></button>
+                    <button id="closeButton" class="app-control-buttons closeButton"></button>
+                </div>
+            </div>
+            <div class="app-field-box">
+                <div class="sidebar-menu">
+                    <div class="sidebar-connections">
+                        <button id="addConnection" class="sidebar-connections-buttons addConnection"></button>
+                    </div>
+                </div>
+                <div class="explorer">
+                    Explorer
+                </div>
+                <div class="editor-output-box">
+                    <div class="editor">
+                        Editor Field
+                    </div>
+                    <div class="output">
+                        <div class='output-menu'>
+                            OUTPUT
+                        </div>
+                        <div class="output-field">
+                            Output
+                        </div>                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- Scripts -->
+        <script src="js/mainRenderer.js"></script>
+    </body>
+</html>
