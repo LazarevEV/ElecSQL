@@ -6,10 +6,9 @@ html, body {
     margin: 0;
     padding: 0;
     color: #C4C4C4;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans';
     font-size: 12px;
     font-style: normal;
-    font-weight: lighter;
 }
 
 body {
@@ -29,7 +28,7 @@ body {
     background-color: #272F37;
     /* background-color: #192531; */
     /* background-color: #0E1B28; */
-    height: 27px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,9 +87,9 @@ body {
 
 .sidebar-menu {
     background-color: #272F37;
-    min-width: 56px;
-    max-width: 56px;
-    padding: 8px;
+    min-width: 48px;
+    max-width: 48px;
+    padding: 4px;
     flex: 1;
 }
 

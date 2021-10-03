@@ -1,0 +1,73 @@
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+    color: #F4F4F4;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #272F37;
+
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+}
+
+.title-bar {
+    height: 40px;
+    align-items: center;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.title-bar > .window-name {
+    /* Doesn't work at the moment - ?? */
+    -webkit-app-region: drag;
+}
+
+.title-bar > .closeButton {
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-image: url("../icons/buttons/window_close.svg");
+}
+
+.title-bar > .closeButton:hover {
+    background-color: #6E7175;
+    border-radius: 4px;
+}
+
+
+.manager-window, .manager-control-bar {
+    display: grid;
+    grid-template-columns: 20fr 80fr;
+}
+
+.manager-window * {
+    display: flex;
+    flex-direction: column;
+}
+
+.connection-parameters {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+}
+
+.sidebar-connections {
+    background-color: aqua;
+}
+.settings-window {
+    background-color: blueviolet;
+}

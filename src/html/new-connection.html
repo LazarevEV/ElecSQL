@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ElecSQL</title>
+        <link rel="stylesheet" type="text/css" href="../css/new-connection.css">
+    </head>
+    <body>
+        <div class="window-wrapper">
+            <div class='title-bar'>
+                <div class="window-name">Connections</div>
+                <button id="closeButton" class="window-control-buttons closeButton"></button>
+            </div>
+            <div class="manager-window">
+                <div class="sidebar-connections">
+                    THIS IS SIDEBAR
+                </div>
+                <div class="settings-window">
+                    <div class="connection-name">
+                        <span>CONNECTION NAME*</span>
+                        <input
+                            type="text"
+                            id="connectionNameInput"
+                            name="connection-name"
+                            placeholder="Insert connection name"
+                        />
+                    </div>
+                    <div class="connection-type">
+                        <span>TYPE*</span>
+                        <select name="type" id="connType" >
+                            <option value="" selected disabled hidden>Select your option</option>
+                            <option value="clickhouse">Clickhouse</option>
+                            <option value="redshift">Redshift</option>
+                        </select>
+                    </div>
+                    <div class="connection-parameters">
+                        <div class="connection-hostname">
+                            <span>HOSTNAME*</span>
+                            <input
+                                type="text"
+                                id="connectionName"
+                                placeholder="Insert hostname"
+                            />
+                        </div>
+                        <div class="connection-port">
+                            <span>PORT*</span>
+                            <input
+                                type="text"
+                                id="connectionPort"
+                                placeholder="0000"
+                            />
+                        </div>
+                    </div>
+                    <div class="connection-database">
+                        <span>DATABASE*</span>
+                        <input
+                            type="text"
+                            id="connectionDatabase"
+                            placeholder="Insert connection name"
+                        />
+                    </div>
+                    <div class="connection-credentials">
+                        <div class="connection-username">
+                            <span>USERNAME*</span>
+                            <input
+                                type="text"
+                                id="connectionName"
+                                placeholder="Username"
+                            />
+                        </div>
+                        <div class="connection-password">
+                            <span>PASSWORD*</span>
+                            <input
+                                type="text"
+                                id="connectionPassword"
+                                placeholder="Password"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="manager-control-bar">
+                <div class="new-connection-button">
+                    <button>NEW CONNECTION</button>
+                </div>
+                <div class="new-connection-control-bar">
+                    <button>CONNECT</button>
+                    <button>TEST</button>
+                    <button>SAVE</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/newConnRenderer.js"></script>
+</html>
